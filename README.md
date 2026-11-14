@@ -2,7 +2,7 @@
 
 El [Juego de la Vida de Conway](https://es.wikipedia.org/wiki/Juego_de_la_vida) en C++ usando solo la API de Windows: la ventana, la entrada de teclado y el dibujado (un renderizador por software que pinta píxel a píxel, con texto y números) están hechos a mano, sin SDL ni OpenGL.
 
-> Proyecto personal (septiembre 2024). La base de la ventana Win32 y del renderizador sigue un tutorial <!-- TODO: enlaza el tutorial que seguiste -->; la simulación y la interfaz son mías.
+> Proyecto personal (septiembre 2024). La base de la ventana Win32 y del renderizador sigue el tutorial [*How to make a game in C++*](https://www.youtube.com/playlist?list=PL7Ej6SUky135IAAR3PFCFyiVwanauRqj3) de Dan Zaidan; la simulación y la interfaz son mías.
 
 <!-- TODO: añade un GIF de la simulación. -->
 
