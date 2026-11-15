@@ -76,13 +76,6 @@ preparing_simulation(Input* input, u16*& grid, bool& endedPreparetion, bool& run
 		draw_text("S", 40, -11, 1, 0x000000, render_state);
 	}
 
-	// show camera and set if you want it or not
-	if (pressed(BUTTON_R)) camera = !camera;
-	
-	
-	if (camera) draw_text("CAMERA IS ON TO CHANGE PRESS R", -50, -30, 0.6, 0xfc0606, render_state);
-	else draw_text("CAMERA IS OFF TO CHANGE PRESS R", -50, -30, 0.6, 0xffffff, render_state);
-
 	if (is_down(BUTTON_ESC)) running = false;
 
 }
