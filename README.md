@@ -1,4 +1,4 @@
-# Juego de la Vida en C++ (Win32, sin librerías)
+# Juego de la Vida (versión propia pues el algoritmo es diferente) en C++ (Win32, sin librerías)
 
 El [Juego de la Vida de Conway](https://es.wikipedia.org/wiki/Juego_de_la_vida) en C++ usando solo la API de Windows: la ventana, la entrada de teclado y el dibujado (un renderizador por software que pinta píxel a píxel, con texto y números) están hechos a mano, sin SDL ni OpenGL.
 
@@ -32,5 +32,4 @@ Windows con Visual Studio: abre `TutorialF.sln` y ejecuta.
 ## Mejoras pendientes
 
 - Cámara con zoom y desplazamiento para explorar tableros grandes (idea pendiente).
-- Usar dos tableros (origen y destino). Ahora el tablero se actualiza sobre sí mismo, así que algunas celdas ven el estado nuevo de sus vecinas en vez del anterior.
 - Esta versión prioriza que funcione; la versión optimizada en C (tiling, OpenMP, análisis de caché) está en [Game-of-Life-optimization](https://github.com/jaimeamse/Game-of-Life-optimization).
