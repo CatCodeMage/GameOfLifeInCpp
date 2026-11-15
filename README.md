@@ -1,35 +1,35 @@
-# Juego de la Vida (versión propia pues el algoritmo es diferente) en C++ (Win32, sin librerías)
+# Game of Life (my own variant, since the algorithm is different) in C++ (Win32, no libraries)
 
-El [Juego de la Vida de Conway](https://es.wikipedia.org/wiki/Juego_de_la_vida) en C++ usando solo la API de Windows: la ventana, la entrada de teclado y el dibujado (un renderizador por software que pinta píxel a píxel, con texto y números) están hechos a mano, sin SDL ni OpenGL.
+[Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) in C++ using only the Windows API: the window, the keyboard input and the drawing (a software renderer that paints pixel by pixel, with text and numbers) are written by hand, with no SDL or OpenGL.
 
-> Proyecto personal (septiembre 2024). La base de la ventana Win32 y del renderizador sigue el tutorial [*How to make a game in C++*](https://www.youtube.com/playlist?list=PL7Ej6SUky135IAAR3PFCFyiVwanauRqj3) de Dan Zaidan; la simulación y la interfaz son mías.
+> Personal project (September 2024). The Win32 window and renderer base follows Dan Zaidan's tutorial [*How to make a game in C++*](https://www.youtube.com/playlist?list=PL7Ej6SUky135IAAR3PFCFyiVwanauRqj3); the simulation and the interface are mine.
 
-![Simulación del Juego de la Vida](demo.gif)
+![Game of Life simulation](demo.gif)
 
-## Controles
+## Controls
 
-**Configuración**
-- `W` / `S`: sube o baja las filas (y luego las columnas) de 100 en 100.
-- `Enter`: confirma las filas, luego las columnas y empieza. El tablero inicial es aleatorio.
+**Setup**
+- `W` / `S`: increase or decrease the rows (and then the columns) in steps of 100.
+- `Enter`: confirms the rows, then the columns, and starts. The initial board is random.
 
-**Simulación**
-- Mantén `F`: congela la simulación.
-- `R`: vuelve a la pantalla de configuración.
-- `Esc`: salir.
+**Simulation**
+- Hold `F`: freezes the simulation.
+- `R`: goes back to the setup screen.
+- `Esc`: quit.
 
-## Ejecutarlo
+## Running it
 
-Windows con Visual Studio: abre `TutorialF.sln` y ejecuta.
+Windows with Visual Studio: open `TutorialF.sln` and run.
 
-## Archivos
+## Files
 
-| Archivo | Qué hace |
+| File | What it does |
 |---|---|
-| `windows32_plataform.cpp` | Ventana Win32, bucle principal y entrada |
-| `renderer.cpp` | Dibujado por software: rectángulos, texto y números |
-| `game.cpp` | Configuración y reglas del Juego de la Vida |
+| `windows32_plataform.cpp` | Win32 window, main loop and input |
+| `renderer.cpp` | Software rendering: rectangles, text and numbers |
+| `game.cpp` | Setup screen and Game of Life rules |
 
-## Mejoras pendientes
+## Possible improvements
 
-- Cámara con zoom y desplazamiento para explorar tableros grandes (idea pendiente).
-- Esta versión prioriza que funcione; la versión optimizada en C (tiling, OpenMP, análisis de caché) está en [Game-of-Life-optimization](https://github.com/jaimeamse/Game-of-Life-optimization).
+- Camera with zoom and panning to explore large boards (planned).
+- This version focuses on getting it working; the optimized C version (tiling, OpenMP, cache analysis) lives in [Game-of-Life-optimization](https://github.com/jaimeamse/Game-of-Life-optimization).
